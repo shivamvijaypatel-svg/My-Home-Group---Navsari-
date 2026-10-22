@@ -47,9 +47,26 @@ footer .brand,footer .brand b{color:white}footer .brand small{color:#c7eafa}.foo
 @media(max-width:650px){.footer-top{flex-direction:column;gap:28px}.footer-contact{max-width:none}.footer-contact address{font-size:15px}.gallery-caption h3{font-size:21px}footer{padding:38px 6% 90px}.footer-rights{margin-top:22px}.footer-rights .copyright{font-size:13px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
 
+
+/* New booking launch: 1 November 2026, midnight India time. */
+.booking-bar{margin:18px 22px 0;padding:24px 30px;background:var(--theme-main);color:#fff;border-radius:15px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;font-family:var(--theme-font)}
+.booking-copy{flex:1 1 280px;min-width:0}.booking-kicker{display:block;color:var(--theme-light);font-size:12px;font-weight:600;letter-spacing:.5px;margin-bottom:7px}.booking-copy h2{font-family:var(--theme-font);font-size:clamp(21px,2.2vw,28px);line-height:1.25;letter-spacing:-.4px;color:#fff;margin:0 0 8px;font-weight:600}.booking-copy p{font-size:13px;line-height:1.6;color:#e0f0f9;margin:0}.booking-countdown{display:flex;align-items:center;gap:8px;font-variant-numeric:tabular-nums}.booking-countdown[hidden]{display:none}.booking-unit{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:62px;padding:12px 10px;background:#ffffff12;border:1px solid #ffffff38;border-radius:9px}.booking-number{font-size:29px;font-weight:700;line-height:1.1;color:#fff}.booking-unit small{font-size:11px;line-height:1.5;color:#d9edf8;margin-top:5px}.booking-bar .booking-cta{background:#fff;border-color:#fff;color:var(--theme-main);font-size:13px;white-space:nowrap;padding:15px 20px;min-height:48px}.booking-bar .booking-cta:focus-visible{outline:3px solid #c7eafa;outline-offset:4px}.booking-bar.is-open{border-bottom:4px solid var(--theme-light)}
+@media(max-width:650px){.booking-bar{margin:10px 10px 0;padding:23px 20px;gap:20px;border-radius:12px;display:grid;grid-template-columns:minmax(0,1fr)}.booking-copy{min-width:0}.booking-countdown{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;width:100%;max-width:380px}.booking-unit{min-width:0;padding:12px 5px}.booking-number{font-size:27px}.booking-bar .booking-cta{width:100%;max-width:380px;white-space:normal;text-align:center}.booking-copy h2{font-size:24px}}
+
 </style></head><body>
 <header><a class="brand" href="#" aria-label="Village City 2 home">Village City <b>2</b><small>BY MY HOME GROUP</small></a><button class="menu" aria-label="Open menu" aria-expanded="false">☰</button><nav aria-label="Main navigation"><a href="#about">The project</a><a href="#amenities">Amenities</a><a href="#gallery">Gallery</a><a href="#location">Location</a><a href="#nearby">Nearby areas</a><a class="button" href="#contact">Plan a visit <span>↗</span></a></nav></header>
-<main><div class="hero"><div class="hero-content"><span class="eyebrow">ITADVA · NAVSARI · GUJARAT</span><h1>A place to belong.<br>A place to <em>call home.</em></h1><p>Welcome to Village City 2. Discover a residential community by My Home Group, with room for everyday life to unfold.</p><div class="actions"><a class="button light" href="#gallery">Explore the project <span>↗</span></a></div></div></div><div class="hero-image-note picture-note">Artist’s impression, digitally colour-styled for illustrative purposes only. Actual design, layout, specifications and amenities may vary, subject to applicable approvals. This image does not constitute an offer, warranty or contractual commitment.</div>
+<main>
+<aside class="booking-bar" id="booking-launch" aria-labelledby="booking-title" data-launch="2026-11-01T00:00:00+05:30">
+  <div class="booking-copy"><span class="booking-kicker">special pricing for new bookings</span><h2 id="booking-title">your next chapter begins this november</h2><p id="booking-date">Bookings open <time datetime="2026-11-01T00:00:00+05:30">1 November 2026, 12:00 am IST</time>.</p></div>
+  <div class="booking-countdown" id="booking-countdown" role="timer" aria-label="Time until new bookings open" aria-live="off" hidden>
+    <span class="booking-unit"><span class="booking-number" data-unit="days">00</span><small>days</small></span>
+    <span class="booking-unit"><span class="booking-number" data-unit="hours">00</span><small>hours</small></span>
+    <span class="booking-unit"><span class="booking-number" data-unit="minutes">00</span><small>minutes</small></span>
+    <span class="booking-unit"><span class="booking-number" data-unit="seconds">00</span><small>seconds</small></span>
+  </div>
+  <a class="button booking-cta" href="#contact">Enquire about special pricing ↗</a>
+</aside>
+<div class="hero"><div class="hero-content"><span class="eyebrow">ITADVA · NAVSARI · GUJARAT</span><h1>A place to belong.<br>A place to <em>call home.</em></h1><p>Welcome to Village City 2. Discover a residential community by My Home Group, with room for everyday life to unfold.</p><div class="actions"><a class="button light" href="#gallery">Explore the project <span>↗</span></a></div></div></div><div class="hero-image-note picture-note">Artist’s impression, digitally colour-styled for illustrative purposes only. Actual design, layout, specifications and amenities may vary, subject to applicable approvals. This image does not constitute an offer, warranty or contractual commitment.</div>
 <div class="strip" aria-label="Project highlights"><div class="highlight"><span class="highlight-icon" aria-hidden="true">✓</span><div><small>PROJECT HIGHLIGHT</small><strong>NA Plan Pass</strong></div></div><div class="highlight"><span class="highlight-icon" aria-hidden="true">✓</span><div><small>PROJECT HIGHLIGHT</small><strong>Title Clear Project</strong></div></div><div class="highlight"><span class="highlight-icon" aria-hidden="true">₹</span><div><small>PROJECT HIGHLIGHT</small><strong>Loan Accessible</strong></div></div></div>
 <section id="about" class="split"><div><div class="section-no">01 / THE PROJECT</div><h2>Your next chapter,<br><em>rooted in community.</em></h2><p>A home is more than an address. It is where familiar faces become neighbours, evenings find a slower rhythm, and your family makes its own memories.</p><p>Village City 2 brings residential plots and a considered community vision to Itadva, Navsari. Explore the architectural concepts and shared spaces, and contact the site office for current project details.</p><div class="quote">“Every person deserves a place to call home.”<br><span style="font:11px Arial;letter-spacing:1px">THE MY HOME GROUP VISION</span></div></div><div class="framed"><img class="photo" src="assets/homes-blue.webp" alt="Architectural rendering of the Village City 2 residences" loading="lazy"><div class="picture-note">Artist’s impression, digitally colour-styled for illustrative purposes only. Actual design, layout, specifications and amenities may vary, subject to applicable approvals. This image does not constitute an offer, warranty or contractual commitment.</div></div></section>
 <section id="amenities" class="amenities"><div class="section-head"><div><div class="section-no">02 / LIFE AT VILLAGE CITY 2</div><h2>Thoughtful spaces.<br><em>Everyday possibilities.</em></h2></div><p>From essential infrastructure to places to play and unwind, explore the community amenities and confirm the current specifications with the developer.</p></div><div class="amenity-grid">
@@ -99,4 +116,34 @@ enquiryForm.addEventListener('submit',event=>{
   window.open(url,'_blank','noopener');
   status.focus();
 });
+</script><script>
+// Fixed launch date, independent of the visitor's local time zone.
+(() => {
+  const bar = document.getElementById('booking-launch');
+  if (!bar) return;
+  const launch = Date.parse(bar.dataset.launch);
+  if (!Number.isFinite(launch)) return;
+  const countdown = document.getElementById('booking-countdown');
+  const title = document.getElementById('booking-title');
+  const date = document.getElementById('booking-date');
+  const units = Object.fromEntries(['days','hours','minutes','seconds'].map(unit => [unit, countdown.querySelector('[data-unit="' + unit + '"]')]));
+  let interval;
+  function update() {
+    const remaining = Math.max(0, Math.ceil((launch - Date.now()) / 1000));
+    if (remaining === 0) {
+      countdown.hidden = true;
+      title.textContent = 'bookings now open';
+      date.textContent = 'Enquire with our team about special pricing for new bookings.';
+      bar.classList.add('is-open');
+      if (interval) clearInterval(interval);
+      return false;
+    }
+    const values = {days:Math.floor(remaining / 86400),hours:Math.floor(remaining / 3600) % 24,minutes:Math.floor(remaining / 60) % 60,seconds:remaining % 60};
+    for (const unit of Object.keys(values)) units[unit].textContent = String(values[unit]).padStart(2,'0');
+    countdown.hidden = false;
+    return true;
+  }
+  if (update()) interval = setInterval(update,1000);
+  document.addEventListener('visibilitychange',() => { if (!document.hidden) update(); });
+})();
 </script></body></html>
